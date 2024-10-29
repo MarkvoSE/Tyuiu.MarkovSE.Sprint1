@@ -8,13 +8,12 @@ namespace Tyuiu.MarkovSE.Sprint1.Task3.V15.Test
         public void TestMethod1()
         {
             DataService ds = new DataService();
-            double v1 = 100;
-            double v2 = 150;
-            double S = 300;
-            double T= 1;
-            double wait = 50;
+            double v1 = 2;
+            double v2 = 3;
+            double S = 6;
+            double T= 5;
             var res = ds.DistanceOverTime( v1,  v2,  S,  T);
-            Assert.AreEqual(res, wait);
+            Assert.AreEqual(res, 31);
         }
     }
 }
